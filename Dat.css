@@ -1,0 +1,498 @@
+* {
+  font-family: Work Sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto,sans-serif;
+}
+
+#Container {
+  font-family: sans-serif;
+  margin: 0;
+  height: auto;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+body{
+  background-color: rgb(194, 194, 194);
+}
+/* ------------------------------------------------------------Trang chủ----------------------------------------------------------- */
+/* Menu bar*/
+.nav-menu {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  min-height: 120px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  border-bottom: 8px solid orange;
+}
+
+.nav-menu img{
+  margin-left: 40px ;
+  width: 90px;
+  height: 90px;
+}
+.nav-menu img:hover{
+  transition: 0.5s ease-in-out;
+  transform: scale(1.1, 1.1);
+}
+
+.nav-menu a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: orange;
+} 
+
+.nav-menu ul{
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu ul li{
+  position: relative;
+  text-align: center;
+  padding: 14px 25px;
+  /* font-size: 22px;
+  font-weight: 700; */
+  transition: 0.5s;
+}
+
+.nav-menu ul li:hover {
+  color: orange;
+  transform: scale(1.3, 1.3);
+} 
+
+.nav-menu ul li > .sub_menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+.nav-menu ul li:hover > .sub_menu{
+  display: block;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.font-nav-menu{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* nút đăng nhập */
+.dangnhap a{
+  position: fixed;
+  right: 3%;
+  top: 30px;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dangnhap a:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+  /* khi cuộn start */
+  .nav-menu.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color:white;
+    opacity: 0.9;
+  }
+
+  .nav-menu.sticky ul li a {
+    color: black;
+  }
+
+  .nav-menu.sticky ul li > .sub_menu{
+    padding-top: 20px;
+    border-radius: 10;
+  }
+
+  .nav-menu.nav-menu.sticky ul li:hover > .sub_menu{
+    color: black;
+    background-color: white;
+  }
+
+  .nav-menu.sticky .dangnhap a{
+    color: black;
+    border: 1px solid black;
+  }
+
+  .nav-menu.sticky .dangnhap a:hover{
+    background-color: black;
+    color: white;
+  }
+  /* khi cuộn end */
+
+
+  #Banner {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .Banner img{
+    opacity: 0.9;
+  }
+  .Banner .TextCenter {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    width: 500px;
+    font-size: 80px; 
+    text-align: center;
+    animation: drop 1s ease forwards;
+  }
+    @keyframes drop {
+      from {
+        top: -50px;
+        opacity: 0;
+      }
+      to {
+        top: 32%;
+        opacity: 1;
+      }
+    }
+
+
+/* =================================================main============================================== */
+  .main{
+    position: relative;
+    width: 1500px;
+    min-height: 850px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 45px;
+    padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* box1 */
+  .main .box1{
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    min-height: 520px;
+  }
+
+  .main .title{
+    /* position: absolute;
+    top: 0px; */
+    background-color: #003d71;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+  .main .box1 .nd{
+    padding: 15px;
+  }
+  .main .box1 .nd .tien{
+    font-weight: 700;
+    color: red;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  .main .box1 .nd .form-control{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  }
+
+  .main .box1 .nd .form-control-1{
+    display: inline-block;
+    width: 65%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  }
+
+  .main .box1 .nd .btn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 25px ;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .main .box1 .nd .chon{
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .main .box1 .nd .btn-2{
+    background-color: #ffc10e;
+    color: white;
+    display: block;
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s ;
+  }
+
+  .main .box1 .nd .btn-2:hover{
+    box-shadow: 2px 2px 10px 3px black;
+    background-color: #d7a200;
+  }
+
+  .main .box1 .nd .chon .panel-body{
+    position: relative;
+    display: none;
+    padding: 15px;
+    margin: 10px;
+    background-color: #ccc;
+    border: 1px solid black;
+    line-height: 25px;
+    font-size: 15px;
+  }
+  #hide{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  #hide:hover{
+    transform: scale(1.3, 1.3);
+    color: rgba(231, 150, 0, 0.863);
+  }
+  /* ============================================= box2 =====================================*/
+  .main .box2{
+    position: absolute;
+    right: 50px;
+    background-color: white;
+    width: 1000px;
+    height: 450px;
+  }
+
+  .main .box2 .ct{
+    border-top: 20px solid rgb(194, 194, 194) ;
+  }
+  .main .box2 .im{
+    position: absolute;
+    height: auto;
+    width: 420px;
+  }
+  .main .box2 .info{
+    position: absolute;
+    padding: 10px;
+    right: 0px;
+    height: auto;
+    width: 550px;
+    line-height: 25px;
+    font-size: 18px;
+  }
+
+  .main .box2 .info .line-price{
+    display: flex;
+  }
+
+  .main .box2 .info .line-price .line-total{
+    position: absolute;
+    right: 55px;
+  }
+
+  .main .box2 .info .line-price .vnd{
+    position: absolute;
+    right: 13px;
+  }
+
+  .main .box2 .info .line-price .qty{
+    width: 45px;
+    color: #ffc10e;
+    text-align: center;
+  }
+  .main .box2 .info .line-price .qty-1{
+    width: 45px;
+    color: #ffc10e;
+    text-align: center;
+  }
+  .main .box2 .info .line-price .qty-2{
+    width: 45px;
+    color: #ffc10e;
+    text-align: center;
+  }
+  .main .box2 .info .line-price .customer{
+    font-size: 15px;
+  }
+  .main .box2 .info .Tongtien{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+/* =========================================== box3 =====================================*/
+  .main .box3{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 50px;
+    top:520px;
+    background-color: #ffc10e;
+    width: 1000px;
+    height: 70px;
+  }
+
+  .main .box3 .btn{
+    background-color: #337ab7;
+    color: white;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    margin-left: 25px ;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .main .box3 .btn:hover{
+  box-shadow: 2px 2px 10px 3px white;
+  background-color: #003d71;
+  }
+
+  .main .box3 .tongcong{
+    font-size: 22px;
+    font-weight: 600;  
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+
+  /* ====================================================== footer ============================================*/
+footer a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+footer a:hover{
+  color: orange;
+  /* transform: scale(1.1, 1.1); */
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+footer ul li{
+  list-style: none;
+  color: white;
+}
+footer{
+  background-color: black;
+  height: 600px;
+  width: 100%;
+  border-top: 20px solid orange;
+}
+.container-foot{
+  width: 1400px;
+  color: white;
+  border-bottom: 1px solid #ffc10e;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 180px 280px 200px 1fr 1fr;
+  grid-template-areas: 
+  "box1 box2 box3 box4 box5";
+}
+
+.box1{
+  grid-area: box1;
+}
+.box2{
+  grid-area: box2;
+}
+.box3{
+  grid-area: box3;
+}
+.box4{
+  grid-area: box4;
+}
+.box5{
+  grid-area: box5;
+}
+
+.item-foot{
+  position: relative;
+  padding: 5px;
+  line-height: 25px;
+}
+.item-foot .img1{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: auto;
+  height: 90px;
+}
+
+.title-end{
+  color: white;
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-bottom: 20px;
+}

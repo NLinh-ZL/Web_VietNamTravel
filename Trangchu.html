@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;family=Work+Sans:wght@400;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap%404.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"><!--thư viện icon -->
+     <link rel="stylesheet" href="mycss.css">
+     <title>Trang Chủ</title>
+</head>
+
+<!-- java header khi kéo xuống -->
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(this).scrollTop()){
+					$('.nav-menu').addClass('sticky');
+				}else{
+					$('.nav-menu').removeClass('sticky');
+				}
+			})
+		})
+	</script>
+
+<body>
+
+    <a href="#T"><i id="top" class="fa-solid fa-arrow-up fa-fade fa-2xl" style="color: #000000;"></i></a>
+    
+    <!-- Menu -->
+    <h2 id="T"></h2>
+    <div class="nav-menu">
+        <a href="Trangchu.html">
+        <img src="img Banner/logo.png"></img>
+        </a>
+        <ul class="font-nav-menu">
+            <li><a href="Trangchu.html">Trang chủ</a></li>
+            <li>
+                <a href="#">Du lịch</a>
+                <ul class="sub_menu">
+                    <li><a href="#bac">Miền Bắc</a></li>
+                    <li><a href="#trung">Miền Trung</a></li>
+                    <li><a href="#nam">Miền Nam</a></li>
+                </ul>
+            </li>
+            <li><a href="DatTour.html">Đặt Tour</a></li>
+        </ul>
+        <div class="dangnhap">
+            <a href="DangNhap.html">Đăng nhập</a>
+        </div>
+    </div>
+
+    
+
+    <!-- Banner -->
+    <div id="Banner">
+        <figure class="slider">
+            <figure>
+                <img src="img%20Banner/BNPhuQuoc.jpg" width="100%"
+                    height="100%" alt>
+                
+            </figure>
+            <figure>
+                <img src="img Banner/BNRuongBacThang.jpg" width="100%" height="100%" alt>
+                
+            </figure>
+            <figure>
+                <img src="img Banner/BNSapa.jpg" width="100%" height="100%" alt>
+                
+            </figure>
+
+            <figure>
+                <img src="img Banner/BNHoiAn.jpg" width="100%" height="100%" alt>
+                
+            </figure>
+
+            <figure>
+                <img src="img Banner/BNHaLong.jpg" width="100%" height="100%" alt>
+                
+            </figure>
+
+        </figure>
+        <div class="TextCenter">Travel VietNam</div>
+        <div class="search">
+            <form>
+                <select id="chosen-search-1">
+                    <option value selected>Xuất phát từ</option>
+                    <option value="TP HCM">Hồ Chí Minh</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Hải Phòng">Hải Phòng</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <option value="Cần Thơ">Cần Thơ</option>
+                    <option value="Cà Mau">Cà Mau</option>
+                </select>
+                <select id="chosen-search-2">
+                    <option value="1" selected>Tìm theo từ khóa</option>
+                    <option value="2">Tìm theo ngày</option>
+                </select>
+                    <input id="search-by-text" type="text" class="form-control" placeholder="Nhập thông tin cần tìm..." name="title">
+                    <button type="submit" class="btn btn-danger">TÌM TOUR</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- menu-content -->
+    <div class="menu-content">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img Banner/Icon Mat troi.png"></img></span><br>
+                        <span class="text-uppercase">Tour Hè 2023</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img Banner/Icon Chua.png"></img></span><br>
+                        <span class="text-uppercase">Tour Hành Hương</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img Banner/Icon Trai Dat.png"></img></span><br>
+                        <span class="text-uppercase">Free &amp; Easy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img src="img Banner/Icon Nu Than TD.png"></img></span><br>
+                        <span class="text-uppercase">Tour cao cấp </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+
+        <!-- ==================================================content-1================================================ -->
+        <div class="content-1 bg-1">
+            <div class="container-1">
+                <div class="box1 b1">
+                    <span>Chúng tôi giới thiệu đến bạn</span>
+                    <h2>TOUR ĐANG HOT</h2>
+                </div>
+                <div class="box2 item">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/PhaoHoaDaNang.jpg">
+                        <img class="hot" src="img Banner/hot.png">
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html" title="Du Lịch Đà Nẵng: Lễ Hội Pháo Hoa Quốc Tế Đà Nẵng 2023">Du Lịch Đà Nẵng: Lễ Hội Pháo Hoa Quốc Tế Đà Nẵng 2023</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>02/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>6.990.000 vnđ</span>
+                        <p style="text-decoration: line-through;">7.900.000</p>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+                        
+                </div>
+                <div class="box3 item">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/dalat_hot.jpg">
+                        <img class="hot" src="img Banner/hot.png">
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html" title="Du Lịch Đà Lạt: Thác Đamb’ri - Nông Trại Cún Puppy Farm - Đồi Chè Cầu Đất - Làng Hoa Vạn Thành">Du Lịch Đà Lạt: Thác Đamb’ri - Nông Trại Cún Puppy Farm - Đồi Chè Cầu Đất - Làng Hoa Vạn Thành</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>10/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>3.390.000 vnđ</span>
+                        <p style="text-decoration: line-through;">4.500.000</p>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+                <div class="box4 item">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/NhaTrang.jpeg">
+                        <img class="hot" src="img Banner/hot.png">
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html" title="Du Lịch Nha Trang: Tháp Bà Ponagar - Vinwonders - I Resort">Du Lịch Nha Trang: Tháp Bà Ponagar - Vinwonders - I Resort</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>06/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>3.220.000 vnđ</span>
+                        <p style="text-decoration: line-through;">4.090.000</p>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+                <div class="box5 item">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/Bienho Pleiku.jpg">
+                        <img class="hot" src="img Banner/hot.png">
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html" title="Du Lịch Tây Nguyên: Pleiku - Kon Tum - Măng Đen">Du Lịch Tây Nguyên: Pleiku - Kon Tum - Măng Đen</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>25/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>5.650.000 vnđ</span>
+                        <p style="text-decoration: line-through;">6.490.000</p>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+                <div class="box6 item">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/PhuQuocbox.jpg">
+                        <img class="hot" src="img Banner/hot.png">
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html" title="Du Lịch Phú Quốc: Sunset Sanato - Vinwonder - Grand World">Du Lịch Phú Quốc: Sunset Sanato - Vinwonder - Grand World</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>04/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>5.990.000 vnđ</span>
+                        <p style="text-decoration: line-through;">6.950.000</p>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+                <div class="box7 item">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/HaLongbox.jpg">
+                        <img class="hot" src="img Banner/hot.png">
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html" title="Du Lịch Hà Nội: Tuyệt Tình Cốc - Bái Đính - Tràng An - Hạ Long - Yên Tử">Du Lịch Hà Nội: Tuyệt Tình Cốc - Bái Đính - Tràng An - Hạ Long - Yên Tử</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Đà Nẵng</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>10/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>8.900.000 vnđ</span>
+                        <p style="text-decoration: line-through;">10.990.000</p>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ==================================content-2============================================ -->
+        <div class="content-1 bg-2 content-3m" id="bac">
+            <div class="container-1 ct-2">
+                <div class="box1 b1-2">
+                    <span>Khám Phá Lịch Sử - Văn Hóa Việt Nam </span>
+                    <h2>TOUR MIỀN BẮC</h2>
+                </div>
+                <div class="box2 item shadow-2">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/Fansipanbox.jpg">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">Du Lịch Sapa: Fansipan - Cầu Kính Rồng Mây</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>22/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>10.190.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+                        
+                </div>
+                <div class="box3 item shadow-2">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/Moc Chau box.webp">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">Du Lịch Mai Châu - Mộc Châu: Ngắm Hoa Mùa Xuân</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>29/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>12.990.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+                <div class="box4 item shadow-2">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/Trang An Box.jpg">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">DU LỊCH NINH BÌNH</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hải Phòng</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>12/07/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>2.698.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div> 
+        
+        <!-- ==================================content-3============================================ -->
+        <div class="content-1 bg-3 content-3m" id="trung">
+            <div class="container-1 ct-3m">
+                <div class="box1 b1-3">
+                    <span>Khám Phá Lịch Sử - Văn Hóa Việt Nam </span>
+                    <h2>TOUR MIỀN TRUNG</h2>
+                </div>
+                <div class="box2 item shadow-3">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/Phan Thiet Box.jpeg">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">Du Lịch Phan Thiết: Thanh Minh Tự - Bàu Trắng - Làng Chài Xưa - Lâu Đài Rượu Vang</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>20/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>3.690.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+                        
+                </div>
+                <div class="box3 item shadow-3">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/PhongNha Box.jpg">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">Du Lịch Phong Nha - Kẻ Bàng</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>03/07/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>3.560.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+                <div class="box4 item shadow-3">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/Ly Son Box.jpg">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">Du Lịch Lý Sơn</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hà Nội</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>25/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>4.950.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div> 
+
+        <!-- ==================================content-3============================================ -->
+        <div class="content-1 bg-4 content-3m" id="nam">
+            <div class="container-1 ct-3m">
+                <div class="box1 b1-4">
+                    <span>Khám Phá Lịch Sử - Văn Hóa Việt Nam </span>
+                    <h2>TOUR MIỀN NAM</h2>
+                </div>
+                <div class="box2 item shadow-4">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/PhuQuocBox2.jpg">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">Du Lịch Phú Quốc: Sunset Sanato - Vinwonder - Grand World</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>23/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>5.990.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+                        
+                </div>
+                <div class="box3 item shadow-4">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/Can Tho box.jpg">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">Du Lịch Cần Thơ: Tiền Giang - Cần Thơ</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>22/06/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>3.920.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+                <div class="box4 item shadow-4">
+
+                    <a href="Baocaocuoiky/Travel VietNam.html">
+                        <img class="item-img" src="img Banner/DongThap box.jpg">
+                        <!-- <img class="hot" src="img Banner/hot.png"> -->
+                    </a>
+                    <div class="caption">
+                        <a class="title-tour" href="Baocaocuoiky/Travel VietNam.html">Du Lịch Đồng Tháp: Cánh Đồng Sen Đồng Tháp Mười - Thánh Đường Hồi Giáo - Rừng Tràm Trà Sư</a>
+                        <div class="adtime">
+                            <i class="fa-solid fa-location-dot fa-bounce" style="color: #000000;margin-right: 5px;"></i>
+                            <span>Hồ Chí Minh</span><br><br>
+                            <i class="fa-solid fa-clock" style="color: #000000;margin-right: 2px;"></i>
+                            <span>05/07/2023</span>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <i class="fa-solid fa-money-bill" style="color: black;"></i>
+                        <span>2.890.000 vnđ</span>
+                        <a href="DatTour.html" class="btn-dat">ĐẶT NGAY</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div> 
+        <!--============================================================= content end========================================================= -->
+        <div class="content-end bg-end">
+            <div class="container-end">
+                <div class="box1">
+                    <span>Thiên Nhiên Việt Nam </span>
+                    <h2>ĐỊA DANH HẤP DẪN</h2>
+                </div>
+                <div class="box2 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/Lung Cu.jpg">
+                    <div class="nhan-1">Miền Bắc</div>
+                    </a>
+                </div>
+                <div class="box3 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/bana hills.jpg">
+                    <div class="nhan-2">Miền Trung</div>
+                    </a>
+                </div>
+                <div class="box4 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/mien tay.jpg">
+                    <div class="nhan-2">Miền Nam</div>
+                    </a>
+                </div>
+                <div class="box5 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/nha-trang.jpg">
+                    <div class="nhan-3">Nha Trang</div>
+                    </a>
+                </div>
+                <div class="box6 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/Hoi-an.jpg">
+                    <div class="nhan-3">Hội An</div>
+                    </a>
+                </div>
+                <div class="box7 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/Ha-noi.jpg">
+                    <div class="nhan-3">Hà Nội</div>
+                    </a>
+                </div>
+                <div class="box8 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/Hue.jpeg">
+                    <div class="nhan-3">Huế</div>
+                    </a>
+                </div>
+                <div class="box9 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/Phu yen.jpg">
+                    <div class="nhan-3">Phú Yên</div>
+                    </a>
+                </div>
+                <div class="box10 item-end">
+                    <a href="Baocaocuoiky/Travel VietNam.html"><img src="img Banner/Sapa.jpg">
+                    <div class="nhan-3">Sapa</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--============================================================= footer========================================================= -->
+    <footer>
+        <div class="container-foot">
+            <div class="box1 item-foot">
+                <ul>
+                    <h3>MIỀN BẮC</h3><br>
+                    <li><a href="#">Hà Nội</a></li>
+                    <li><a href="#">Hạ Long</a></li>
+                    <li><a href="#">Sapa</a></li>
+                    <li><a href="#">Ninh Bình</a></li>
+                    <li><a href="#">Tây Bắc</a></li>
+                    <li><a href="#">Đền Hùng</a></li>
+                    <li><a href="#">Chùa Hương</a></li>
+                    <li><a href="#">Yên Tử</a></li>
+                    <li><a href="#">Cát Bà</a></li>
+                </ul>
+            </div>
+            <div class="box2 item-foot">
+                <ul>
+                    <h3>MIỀN TRUNG - TÂY NGUYÊN</h3><br>
+                    <li><a href="#">Nha Trang</a></li>
+                    <li><a href="#">Mũi Né</a></li>
+                    <li><a href="#">Phan Thiết</a></li>
+                    <li><a href="#">Ninh Chữ</a></li>
+                    <li><a href="#">Đão Bình Ba</a></li>
+                    <li><a href="#">Phong Nha</a></li>
+                    <li><a href="#">Đà Lạt</a></li>
+                    <li><a href="#">Đà Nẵng</a></li>
+                    <li><a href="#">Pleiku</a></li>
+                    <li><a href="#">Huế</a></li>
+                    <li><a href="#">Quảng Ngãi</a></li>
+                    <li><a href="#">Buông Ma Thuộc</a></li>
+                    <li><a href="#">Quy Nhơn</a></li>
+                    <li><a href="#">Lý Sơn</a></li>
+                </ul>
+            </div>
+            <div class="box3 item-foot">
+                <ul>
+                    <h3>MIỀN NAM</h3><br>
+                    <li><a href="#">Phú Quốc</a></li>
+                    <li></li><a href="#">Vũng Tàu</a></li>
+                    <li><a href="#">Tiền Giang</a></li>
+                    <li><a href="#">Cần Thơ</a></li>
+                    <li><a href="#">Hà Tiên </a></li>
+                    <li><a href="#">Đồng Tháp</a></li>
+                    <li><a href="#">Cà Mau</a></li>
+                </ul>
+            </div>
+            <div class="box4 item-foot">
+                <h3>HOTLINE</h3><br>
+                <ul>
+                    <li>Khách lẻ: 0900 9001 739</li>
+                    <li>Tour đoàn: 0909 482 586</li>
+                    <li>Vé máy bay: 0832 040 841</li>
+                </ul>
+            </div>
+            <div class="box5 item-foot">
+                <h3>LIÊN HỆ</h3><br>
+                <ul>
+                    <li>CÔNG TY CỔ PHẦN DỊCH VỤ DU LỊCH VIỆT NAM</li>
+                    <li>VIỆT NAM TRAVEL</li>
+                    <li>Trụ sở: 70 Lý Tự Trọng, P. Bến Thành, Quận 1, TP. Hồ Chí Minh</li>
+                    <li>Tel: 028.3520 2020</li>
+                    <li>Email: <a>vietnam@vietnamtravel.com</a></li>
+                    <li>Tổng Đài: 1900 6668</li>
+                </ul>
+                <img  src="img Banner/Bo cong thuong.png">
+                <img  src="img Banner/hinh foot.jpg">
+                <img class="img1" src="img Banner/hufi logo.png">
+            </div>
+        </div>
+        <div class="title-end">Copyright @ 2023 VietNamTravel - Designed by HUFI Student</div>
+    </footer>
+</body>
+
+
+</html>

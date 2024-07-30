@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;family=Work+Sans:wght@400;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap%404.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"><!--thư viện icon -->
+     <link rel="stylesheet" href="DN.css">
+    <title>Đăng Nhập</title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(this).scrollTop()){
+					$('.nav-menu').addClass('sticky');
+				}else{
+					$('.nav-menu').removeClass('sticky');
+				}
+			})
+		})
+	</script>
+
+<body>
+    <!-- Menu -->
+    <div class="nav-menu">
+        <a href="Trangchu.html">
+        <img src="img Banner/logo.png"></img>
+        </a>
+        <ul class="font-nav-menu">
+            <li><a href="Trangchu.html">Trang chủ</a></li>
+            <li>
+                <a href="Trangchu.html">Du lịch</a>
+                <ul class="sub_menu">
+                    <li><a href="Trangchu.html">Miền Bắc</a></li>
+                    <li><a href="Trangchu.html">Miền Trung</a></li>
+                    <li><a href="Trangchu.html">Miền Nam</a></li>
+                </ul>
+            </li>
+            <li><a href="DatTour.html">Đặt Tour</a></li>
+        </ul>
+        <div class="dangnhap">
+            <a href="DangNhap.html">Đăng nhập</a>
+        </div>
+    </div>
+    <!-- menu -->
+
+    <!-- Content -->
+    <div class="content">
+        <div class="login-container">
+
+            <form id="login-form" method="POST" action="/login">
+
+              <div class="title">Đăng Nhập</div>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+
+                <input type="email" id="email" name="email" >
+
+              </div>
+              <div class="form-group">
+
+                <label for="password">Mật khẩu:</label>
+
+                <input type="password" id="password" name="password" >
+
+              </div>
+              <div class="form-group">
+                <!-- <a href="Trangchu.html" class="dangnhap">Đăng Nhập</a> -->
+
+                <input type="submit" value="Đăng nhập">
+
+              </div>
+              
+            </form>
+
+          </div>
+    </div>
+    <!-- Content -->
+    <!-- required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+     required-->
+    <!--============================================================= footer========================================================= -->
+    <footer>
+        <div class="container-foot">
+            <div class="box1 item-foot">
+                <ul>
+                    <h3>MIỀN BẮC</h3><br>
+                    <li><a href="#">Hà Nội</a></li>
+                    <li><a href="#">Hạ Long</a></li>
+                    <li><a href="#">Sapa</a></li>
+                    <li><a href="#">Ninh Bình</a></li>
+                    <li><a href="#">Tây Bắc</a></li>
+                    <li><a href="#">Đền Hùng</a></li>
+                    <li><a href="#">Chùa Hương</a></li>
+                    <li><a href="#">Yên Tử</a></li>
+                    <li><a href="#">Cát Bà</a></li>
+                </ul>
+            </div>
+            <div class="box2 item-foot">
+                <ul>
+                    <h3>MIỀN TRUNG - TÂY NGUYÊN</h3><br>
+                    <li><a href="#">Nha Trang</a></li>
+                    <li><a href="#">Mũi Né</a></li>
+                    <li><a href="#">Phan Thiết</a></li>
+                    <li><a href="#">Ninh Chữ</a></li>
+                    <li><a href="#">Đão Bình Ba</a></li>
+                    <li><a href="#">Phong Nha</a></li>
+                    <li><a href="#">Đà Lạt</a></li>
+                    <li><a href="#">Đà Nẵng</a></li>
+                    <li><a href="#">Pleiku</a></li>
+                    <li><a href="#">Huế</a></li>
+                    <li><a href="#">Quảng Ngãi</a></li>
+                    <li><a href="#">Buông Ma Thuộc</a></li>
+                    <li><a href="#">Quy Nhơn</a></li>
+                    <li><a href="#">Lý Sơn</a></li>
+                </ul>
+            </div>
+            <div class="box3 item-foot">
+                <ul>
+                    <h3>MIỀN NAM</h3><br>
+                    <li><a href="#">Phú Quốc</a></li>
+                    <li></li><a href="#">Vũng Tàu</a></li>
+                    <li><a href="#">Tiền Giang</a></li>
+                    <li><a href="#">Cần Thơ</a></li>
+                    <li><a href="#">Hà Tiên </a></li>
+                    <li><a href="#">Đồng Tháp</a></li>
+                    <li><a href="#">Cà Mau</a></li>
+                </ul>
+            </div>
+            <div class="box4 item-foot">
+                <h3>HOTLINE</h3><br>
+                <ul>
+                    <li>Khách lẻ: 0900 9001 739</li>
+                    <li>Tour đoàn: 0909 482 586</li>
+                    <li>Vé máy bay: 0832 040 841</li>
+                </ul>
+            </div>
+            <div class="box5 item-foot">
+                <h3>LIÊN HỆ</h3><br>
+                <ul>
+                    <li>CÔNG TY CỔ PHẦN DỊCH VỤ DU LỊCH VIỆT NAM</li>
+                    <li>VIỆT NAM TRAVEL</li>
+                    <li>Trụ sở: 70 Lý Tự Trọng, P. Bến Thành, Quận 1, TP. Hồ Chí Minh</li>
+                    <li>Tel: 028.3520 2020</li>
+                    <li>Email: <a>vietnam@vietnamtravel.com</a></li>
+                    <li>Tổng Đài: 1900 6668</li>
+                </ul>
+                <img  src="img Banner/Bo cong thuong.png">
+                <img  src="img Banner/hinh foot.jpg">
+                <img class="img1" src="img Banner/hufi logo.png">
+            </div>
+        </div>
+        <div class="title-end">Copyright @ 2023 VietNamTravel - Designed by HUFI Student</div>
+    </footer>
+</body>
+
+<script>
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(event) {
+  if (emailInput.value.trim() === '') {
+    alert('Vui lòng nhập email.');
+    event.preventDefault();
+  }
+  
+
+  if (passwordInput.value.trim() === '') {
+    alert('Vui lòng nhập mật khẩu.');
+    event.preventDefault();
+  }
+});
+</script>
+</html>

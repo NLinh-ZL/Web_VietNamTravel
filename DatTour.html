@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;family=Work+Sans:wght@400;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap%404.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"><!--thư viện icon -->
+     <link rel="stylesheet" href="Dat.css">
+    <title>Đặt Tour</title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+
+<body>
+
+    <!-- Menu -->
+    <div class="nav-menu">
+        <a href="Trangchu.html">
+        <img src="img Banner/logo.png"></img>
+        </a>
+        <ul class="font-nav-menu">
+            <li><a href="Trangchu.html">Trang chủ</a></li>
+            <li>
+                <a href="Trangchu.html">Du lịch</a>
+                <ul class="sub_menu">
+                    <li><a href="Trangchu.html">Miền Bắc</a></li>
+                    <li><a href="Trangchu.html">Miền Trung</a></li>
+                    <li><a href="Trangchu.html">Miền Nam</a></li>
+                </ul>
+            </li>
+            <li><a href="DatTour.html">Đặt Tour</a></li>
+        </ul>
+        <div class="dangnhap">
+            <a href="DangNhap.html">Đăng nhập</a>
+        </div>
+    </div>
+
+    <div class="Banner">
+        <img src="img Banner/banner dat tour.jpg">
+        <div class="TextCenter">ĐẶT TOUR</div>
+    </div>
+    <div class="main">
+        <div class="box1">
+            <div class="title">
+                <i class="fa-regular fa-credit-card" style="color: white;"></i>
+                <span>THÔNG TIN NGƯỜI ĐẶT</span>
+            </div>
+            <div class="nd">
+                <div class="tien">Tổng cộng: <span class="Tong"></span> </div>
+                <input id="search-by-text" type="text" class="form-control" placeholder="Họ và Tên" name="ten">
+                <input id="search-by-text" type="text" class="form-control" placeholder="Số điện thoại" name="sdt"> 
+                <input id="search-by-text" type="text" class="form-control" placeholder="Email" name="email">
+                <input id="search-by-text" type="text" class="form-control" placeholder="Địa chỉ" name="dia chi">
+                <input id="search-by-text" type="text" class="form-control-1" placeholder="Nhập mã giảm giá" name="ma giam gia">
+                <button type="submit" class="btn">Kiểm tra</button>
+                <ul class="chon" style="list-style: none; line-height: 30px;">
+                    <li>
+                        <input type="radio" name="thanhtoan" onclick="chose1()" style="cursor: pointer;">
+                        <span>Chuyển khoản ngân hàng</span>
+                        <div class="panel-body" id="pb-1">
+                            <p><strong><span style="font-size:13px">THÔNG TIN THANH TOÁN CHUYỂN KHOẢN</span></strong>
+                            </p>
+                            <p>- <b>Ngân hàng</b>: TMCP Ngoại Thương Việt Nam - CN TP.HCM (VCB)</p>
+                            <p>- <b>Tên đơn vị hưởng</b>: CÔNG TY CỔ PHẦN DỊCH VỤ DU LỊCH VietNamTravel</p>
+                            <p>- <b>Số tài khoản VNĐ</b>: 002.&lrm;&lrm;1008244685</p>
+                            <p>- <b>Tại Ngân Hàng</b> VCB - CN TP.HCM</p>
+                            <i  id="hide" class="fa-solid fa-eye-slash" onclick="chose4()"></i>
+                        </div>
+                    </li>
+                <!-- </div>
+                <div class="chon"> -->
+                    <li>
+                        <input type="radio" name="thanhtoan" onclick="chose2()" style="cursor: pointer;">
+                        <span>Thanh toán văn phòng</span>
+                        <div class="panel-body" id="pb-2">
+                            <p><strong><span style="font-size:13px">VietNam Travel - HUFI Center</span></strong>
+                            </p>
+                            <p>- <b>Địa chỉ:</b> 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh</p>
+                            <p>- <b>Điện thoại</b>: 028.3520.2020</p>
+                            <p>- <b>Tổng đài</b>: 1900 6668</p>
+                            <p>- <b>Hotline</b>: 0900 9001 739</p>
+                            <p>- <b>Email</b>: vietnam@vietnamtravel.com </p>
+                            <i  id="hide" class="fa-solid fa-eye-slash" onclick="chose4()"></i>
+                        </div>
+                    </li>
+                <!-- </div>
+                <div class="chon"> -->
+                    <li>
+                        <input type="radio" name="thanhtoan" onclick="chose3()" style="cursor: pointer;">
+                        <span>Thanh toán online</span>
+                        <div class="panel-body" id="pb-3">
+                            <p><strong><span style="font-size:13px">CÔNG TY CỔ PHẦN DỊCH VỤ DU LỊCH VIỆT NAM<br>(VIETNAM TRAVEL)</span></strong>
+                            </p>
+                            <p>- <b>Trụ sở</b>: 82-84 Calmette, P.Nguyễn Thái Bình, Quận 1, Tp.Hồ Chí Minh</p>
+                            <p>- <b>Điện thoại</b>: 028.3520.2020</p>
+                            <p>- <b>Fax</b>: 028.3829 5060</p>
+                            <p>- <b>Email</b><a>: vietnam@vietnamtravel.com </a></p>
+                            <i  id="hide" class="fa-solid fa-eye-slash" onclick="chose4()"></i>
+                        </div>
+                    </li>
+                </ul>
+                <hr style="margin: 10px 0px; color: gainsboro;">
+                <button type="submit" class="btn-2">THANH TOÁN</button>
+            </div>
+        </div>
+
+
+        <!-- Box2 -->
+        <div class="box2"  >
+            <div class="title">
+                <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
+                <span>THÔNG TIN SẢN PHẨM / DỊCH VỤ</span>
+            </div>
+            <div class="ct">
+                <img src="img Banner/dalat_hot.jpg" class="im">
+                <div class="info">
+                    <h4 style="padding: 10px 0px;">Du Lịch Đà Lạt: Thác Đamb’ri - Nông Trại Cún Puppy Farm - Đồi Chè Cầu Đất - Làng Hoa Vạn Thành</h4>
+                    <div style="margin-bottom: 10px;"><b>Ngày khởi hành: </b><span style="color: #ffc10e;">10/06/2023</span></div>
+                    <div style="margin-bottom: 10px;"><i class="fa fa-users" aria-hidden="true"></i> Số chổ còn nhận: 4</div>
+                    <div class="line-price" style="margin-bottom: 10px;">
+                        <div class="customer">Người lớn</div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input class="qty" type="number" min="1" max="4" value="1" name="adult">&nbsp&nbsp&nbsp
+                        <span>x</span>&nbsp&nbsp
+                        <span class="item-price">3.390.000&nbsp = </span>
+                        <strong class="line-total"></strong>&nbsp&nbsp
+                        <span class="vnd">vnđ</span>
+                    </div>
+                    <div class="line-price" style="margin-bottom: 10px;">
+                        <div class="customer">Trẻ em (6->11 tuổi)</div>&nbsp&nbsp&nbsp&nbsp
+                        <input class="qty-1" type="number" min="1" max="4" value="1" name="adult">&nbsp&nbsp&nbsp
+                        <span>x</span>&nbsp&nbsp
+                        <span class="item-price">200.000&nbsp&nbsp&nbsp&nbsp = &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                        <strong class="line-total-1"></strong>&nbsp&nbsp&nbsp
+                        <span>vnđ</span>
+                    </div>
+                    <div class="line-price" style="margin-bottom: 10px;">
+                        <div class="customer">Trẻ em (2-> 5 tuổi)</div>&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input class="qty-2" type="number" min="1" max="4" value="1" name="adult">&nbsp&nbsp&nbsp
+                        <span>x</span>&nbsp&nbsp
+                        <span >0&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp = &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                        <span><b>0</b></span>&nbsp&nbsp&nbsp
+                        <span>vnđ</span>
+                    </div>
+                    <div class="line-price" style="margin-bottom: 10px;">
+                        <div class="customer">Trẻ em (&lt2 tuổi)</div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input class="qty-2" type="number" min="1" max="4" value="1" name="adult">&nbsp&nbsp&nbsp&nbsp
+                        <span>x</span>&nbsp&nbsp
+                        <span >0&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp = &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                        <span><b>0</b></span>&nbsp&nbsp&nbsp
+                        <span>vnđ</span>
+                    </div>
+                    <hr style="margin: 10px 0px; color: gainsboro;">
+                    <div class="Tongtien">
+                        <div>Tổng</div>
+                        <b><div class="Tong"></div></b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box3"> 
+            <button type="submit" class="btn">Thanh Toán</button>
+            <div class="tongcong">
+                <span class="tien" style="color: #003d71;">Tổng cộng:</span>
+                <span class="Tong" style="color: red;"></span> 
+            </div>
+        </div>
+
+    </div>
+<!-- =================================================================footer==================================================== -->
+    <footer>
+        <div class="container-foot">
+            <div class="box1 item-foot">
+                <ul>
+                    <h3>MIỀN BẮC</h3><br>
+                    <li><a href="#">Hà Nội</a></li>
+                    <li><a href="#">Hạ Long</a></li>
+                    <li><a href="#">Sapa</a></li>
+                    <li><a href="#">Ninh Bình</a></li>
+                    <li><a href="#">Tây Bắc</a></li>
+                    <li><a href="#">Đền Hùng</a></li>
+                    <li><a href="#">Chùa Hương</a></li>
+                    <li><a href="#">Yên Tử</a></li>
+                    <li><a href="#">Cát Bà</a></li>
+                </ul>
+            </div>
+            <div class="box2 item-foot">
+                <ul>
+                    <h3>MIỀN TRUNG - TÂY NGUYÊN</h3><br>
+                    <li><a href="#">Nha Trang</a></li>
+                    <li><a href="#">Mũi Né</a></li>
+                    <li><a href="#">Phan Thiết</a></li>
+                    <li><a href="#">Ninh Chữ</a></li>
+                    <li><a href="#">Đão Bình Ba</a></li>
+                    <li><a href="#">Phong Nha</a></li>
+                    <li><a href="#">Đà Lạt</a></li>
+                    <li><a href="#">Đà Nẵng</a></li>
+                    <li><a href="#">Pleiku</a></li>
+                    <li><a href="#">Huế</a></li>
+                    <li><a href="#">Quảng Ngãi</a></li>
+                    <li><a href="#">Buông Ma Thuộc</a></li>
+                    <li><a href="#">Quy Nhơn</a></li>
+                    <li><a href="#">Lý Sơn</a></li>
+                </ul>
+            </div>
+            <div class="box3 item-foot">
+                <ul>
+                    <h3>MIỀN NAM</h3><br>
+                    <li><a href="#">Phú Quốc</a></li>
+                    <li></li><a href="#">Vũng Tàu</a></li>
+                    <li><a href="#">Tiền Giang</a></li>
+                    <li><a href="#">Cần Thơ</a></li>
+                    <li><a href="#">Hà Tiên </a></li>
+                    <li><a href="#">Đồng Tháp</a></li>
+                    <li><a href="#">Cà Mau</a></li>
+                </ul>
+            </div>
+            <div class="box4 item-foot">
+                <h3>HOTLINE</h3><br>
+                <ul>
+                    <li>Khách lẻ: 0900 9001 739</li>
+                    <li>Tour đoàn: 0909 482 586</li>
+                    <li>Vé máy bay: 0832 040 841</li>
+                </ul>
+            </div>
+            <div class="box5 item-foot">
+                <h3>LIÊN HỆ</h3><br>
+                <ul>
+                    <li>CÔNG TY CỔ PHẦN DỊCH VỤ DU LỊCH VIỆT NAM</li>
+                    <li>VIỆT NAM TRAVEL</li>
+                    <li>Trụ sở: 70 Lý Tự Trọng, P. Bến Thành, Quận 1, TP. Hồ Chí Minh</li>
+                    <li>Tel: 028.3520 2020</li>
+                    <li>Email: <a>vietnam@vietnamtravel.com</a></li>
+                    <li>Tổng Đài: 1900 6668</li>
+                </ul>
+                <img  src="img Banner/Bo cong thuong.png">
+                <img  src="img Banner/hinh foot.jpg">
+                <img class="img1" src="img Banner/hufi logo.png">
+            </div>
+        </div>
+        <div class="title-end">Copyright @ 2023 VietNamTravel - Designed by HUFI Student</div>
+    </footer>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('.nav-menu').addClass('sticky');
+            }else{
+                $('.nav-menu').removeClass('sticky');
+            }
+        })
+    })
+</script>
+
+<script>
+    function chose4(){
+        document.getElementById("pb-1").style.display = "none";
+        document.getElementById("pb-2").style.display = "none";
+        document.getElementById("pb-3").style.display = "none";
+    }
+
+    function chose1(){
+        document.getElementById("pb-1").style.display = "block";
+        document.getElementById("pb-2").style.display = "none";
+        document.getElementById("pb-3").style.display = "none";
+    }
+
+    function chose2(){
+        document.getElementById("pb-1").style.display = "none";
+        document.getElementById("pb-2").style.display = "block";
+        document.getElementById("pb-3").style.display = "none";
+    }
+
+    function chose3(){
+        document.getElementById("pb-1").style.display = "none";
+        document.getElementById("pb-2").style.display = "none";
+        document.getElementById("pb-3").style.display = "block";
+    }
+</script>
+
+<script>
+$(document).ready(function() {
+  $('.line-total').text('3.390.000');
+  $('input.qty').on('input', function() {
+    var adult = $(this).val();
+    var itemPrice = 3390000; 
+    var lineTotal = adult * itemPrice; 
+    var formattedLineTotal = lineTotal.toLocaleString('vi-VN'); 
+    $(this).siblings('.line-total').text(formattedLineTotal);
+  });
+});
+</script>
+
+
+<script>
+    $(document).ready(function() {
+      // Lắng nghe sự kiện "input" của phần tử input.qty
+      $('.line-total-1').text('200.000');
+      $('input.qty-1').on('input', function() {
+        var adult = $(this).val(); // Lấy giá trị của adult
+        var itemPrice = 200000; // Giá trị cố định của item-price
+        var lineTotal = adult * itemPrice; // Tính toán giá trị của line-total
+        var formattedLineTotal = lineTotal.toLocaleString('vi-VN'); // Định dạng giá trị của line-total và thêm dấu chấm phân cách hàng nghìn
+        $(this).siblings('.line-total-1').text(formattedLineTotal); // Cập nhật giá trtrị của line-total
+      });
+    });
+</script>
+
+<script>
+function tinhTong() {
+  var total = 0;
+  $(".line-total, .line-total-1").each(function() {
+    var lineTotal = parseInt($(this).text().replace(/\D/g,''));
+    total += lineTotal;
+  });
+  $(".Tong").text(total.toLocaleString() + " vnđ");
+}
+// tính tổng ban đầu khi tải trang
+// gọi hàm tinhTong() khi số lượng thay đổi
+
+
+$(document).ready(function() {
+  tinhTong(); 
+  $(".qty, .qty-1").on("change", function() {
+    tinhTong();
+ });
+});
+</script>
+    
+</html>

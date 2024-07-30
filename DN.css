@@ -1,0 +1,333 @@
+* {
+    font-family: Work Sans;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto,sans-serif;
+  }
+  
+  #Container {
+    font-family: sans-serif;
+    margin: 0;
+    height: auto;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  body{
+    background-color: rgb(194, 194, 194);
+  }
+  /* ------------------------------------------------------------Trang chủ----------------------------------------------------------- */
+  /* Menu bar*/
+  .nav-menu {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    min-height: 120px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    border-bottom: 8px solid orange;
+  }
+  
+  .nav-menu img{
+    margin-left: 40px ;
+    width: 90px;
+    height: 90px;
+  }
+  .nav-menu img:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1, 1.1);
+  }
+  
+  .nav-menu a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-menu a:hover {
+    color: orange;
+  } 
+  
+  .nav-menu ul{
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-menu ul li{
+    position: relative;
+    text-align: center;
+    padding: 14px 25px;
+    /* font-size: 22px;
+    font-weight: 700; */
+    transition: 0.5s;
+  }
+  
+  .nav-menu ul li:hover {
+    color: orange;
+    transform: scale(1.3, 1.3);
+  } 
+  
+  .nav-menu ul li > .sub_menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+  }
+  
+  .nav-menu ul li:hover > .sub_menu{
+    display: block;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 200;
+  }
+  
+  .font-nav-menu{
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  /* nút đăng nhập */
+  .dangnhap a{
+    position: fixed;
+    right: 3%;
+    top: 30px;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .dangnhap a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+    /* khi cuộn start */
+    .nav-menu.sticky{
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color:white;
+      opacity: 0.9;
+    }
+  
+    .nav-menu.sticky ul li a {
+      color: black;
+    }
+  
+    .nav-menu.sticky ul li > .sub_menu{
+      padding-top: 20px;
+      border-radius: 10;
+    }
+  
+    .nav-menu.nav-menu.sticky ul li:hover > .sub_menu{
+      color: black;
+      background-color: white;
+    }
+  
+    .nav-menu.sticky .dangnhap a{
+      color: black;
+      border: 1px solid black;
+    }
+  
+    .nav-menu.sticky .dangnhap a:hover{
+      background-color: black;
+      color: white;
+    }
+    /* khi cuộn end */
+    /* ======================================================content ===============================================*/
+    .content{
+        position: relative;
+        background-image: url("img Banner/Backgroud dang nhap.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+        width: 100%;
+    }
+      
+    .login-container{
+        position: absolute;
+        top: 200px;
+        left: 800px;
+    }
+
+    form {
+        background-color: rgb(182, 176, 176);
+        opacity: 0.8;
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 20px;
+        width: 400px;
+        height: 450px;
+        transition: 0.8s ease;
+    }
+
+    .login-container form:hover{
+        transform: translateY(-20px);
+        box-shadow: 5px 5px 20px 5px black;
+    }
+    
+    .content .login-container .title{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+        margin: 20px 0px;
+        transition: 0.8s ease;
+    }
+
+    form:hover .title {
+        transform: translateY(-10px);
+        -webkit-text-stroke: 1px orange;
+        text-shadow: 6px 6px 5px black;
+      }
+
+    .content .login-container .form-group{
+        margin: 10px 0px;
+    }
+
+    .content .login-container .form-group input{
+        transition: 0.8s ease;
+    }
+
+    .content .login-container .form-group input:hover{
+        box-shadow: 0px 0px 10px 2px black;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    input[type="submit"] {
+        background-color: orange;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* .content .login-container .form-group .dangnhap{
+      position: absolute;
+      z-index: 100;
+      left: 4%;
+      bottom: 80px;
+      height: 45px;
+      width: 110px;
+      color: white;
+      background-color: orange;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      border: 1px solid white;
+      cursor: pointer;
+      transition: 0.8s ease;
+    }
+  
+    .content .login-container .form-group .dangnhap:hover {
+      box-shadow: 0px 0px 10px 2px black;
+    } */
+
+
+      /* ====================================================== footer ============================================*/
+footer a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+  footer a:hover{
+    color: orange;
+    /* transform: scale(1.1, 1.1); */
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  
+  footer ul li{
+    list-style: none;
+    color: white;
+  }
+  footer{
+    background-color: black;
+    height: 600px;
+    width: 100%;
+    border-top: 20px solid orange;
+  }
+  .container-foot{
+    width: 1400px;
+    color: white;
+    border-bottom: 1px solid #ffc10e;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 180px 280px 200px 1fr 1fr;
+    grid-template-areas: 
+    "box1 box2 box3 box4 box5";
+  }
+  
+  .box1{
+    grid-area: box1;
+  }
+  .box2{
+    grid-area: box2;
+  }
+  .box3{
+    grid-area: box3;
+  }
+  .box4{
+    grid-area: box4;
+  }
+  .box5{
+    grid-area: box5;
+  }
+  
+  .item-foot{
+    position: relative;
+    padding: 5px;
+    line-height: 25px;
+  }
+  .item-foot .img1{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: auto;
+    height: 90px;
+  }
+  
+  .title-end{
+    color: white;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-bottom: 20px;
+  }
